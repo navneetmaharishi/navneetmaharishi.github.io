@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+.form-block {
+  background-color: #E8E8E8;
+  padding: 60px 0;
+}
+.form-block .suggestionsBox {
+  background-color: darkseagreen;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+.form-block .suggestionsBox::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  background-color: darkseagreen;
+  transform: translate(0, 50%) rotate(45deg);
+  z-index: 0;
+}
+.form-block .error {
+  color: red;
+  font-size: 10px;
+  margin: 2px 2px;
+  height: 20px;
+  text-align: right;
+}
+.form-block .data-entry {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#data-table {
+  width: 100%;
+  display: none;
+}
+
+.place-holder {
+  position: absolute;
+  top: 31px;
+  left: 27px;
+  color: lightslategray;
+  transform: translate(0, -100%);
+  transition: 300ms;
+  pointer-events: none;
+}
+
+.set-position {
+  top: -5px;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=main.css.map */
