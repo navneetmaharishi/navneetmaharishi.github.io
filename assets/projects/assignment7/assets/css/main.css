@@ -3,7 +3,7 @@
 }
 
 .block-one {
-  background-image: url(4.jpg);
+  background-image: url("../images/banner.jpg");
   background-position: center right;
   background-size: cover;
   position: relative;
@@ -289,7 +289,7 @@
 }
 
 .block-five {
-  background-image: url(image-47869068-medical-doctor-wallpaper.jpg);
+  background-image: url("../images/docGroup.jpg");
   background-size: cover;
   background-position: center;
 }
