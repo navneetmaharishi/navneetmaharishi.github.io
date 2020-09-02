@@ -79,9 +79,22 @@ body {
 }
 
 .personal-info h5 {
+    position: relative;
     padding-bottom: 10px;
     margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.personal-info h5::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 1px;
+    background: #ddd;
 }
 
 .skills-listing li {
@@ -95,7 +108,7 @@ body {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     display: inline-block;
     height: 5px;
     width: 5px;
@@ -112,7 +125,8 @@ body {
     bottom: 0;
     left: 0;
     width: 330px;
-    padding: 10px;
+    padding: 10px 10px 0px;
+    border-top: 1px solid #fff;
     background-color: #122831;
 }
 
